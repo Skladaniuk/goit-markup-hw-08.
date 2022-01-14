@@ -1,0 +1,51 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section-advantages {
+  padding-top: 94px;
+}
+
+.advantages {
+  display: flex;
+
+  &__items {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__bag {
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+  }
+
+  &__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+    color: $secondly-text-color;
+  }
+}

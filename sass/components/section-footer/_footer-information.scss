@@ -1,0 +1,51 @@
+.footer {
+  background-color: $footer-color;
+
+  &__section {
+    display: flex;
+  }
+
+  &__information {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 229px;
+  }
+}
+
+.footer__location {
+  margin-bottom: 9px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+  color: $white-color;
+}
+
+.footer__contakt {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.logo__text-footer {
+  color: $white-color;
+}
+
+
