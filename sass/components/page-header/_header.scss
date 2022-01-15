@@ -4,8 +4,6 @@
 .section-header {
   display: flex;
   align-items: center;
-
-  @media screen and (min-width: 480px) {
-    height: 60px;
-  }
+  height: 60px;
+  // height: 80px;
 }

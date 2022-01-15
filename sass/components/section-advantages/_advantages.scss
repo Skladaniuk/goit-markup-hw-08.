@@ -13,11 +13,8 @@
 
 .section-advantages {
   // padding-top: 94px;
-
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .advantages {
@@ -41,13 +38,10 @@
     background-color: #f5f4fa;
     // margin-bottom: 30px;
     // padding: 25px 100px;
-
-    @media screen and (min-width: 480px) {
-      width: 450px;
-      height: 120px;
-      padding: 25px 192px;
-      margin-bottom: 60px;
-    }
+    width: 450px;
+    height: 120px;
+    padding: 25px 192px;
+    margin-bottom: 60px;
   }
 
   &__text {
