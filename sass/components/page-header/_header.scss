@@ -3,6 +3,9 @@
 }
 .section-header {
   display: flex;
-  height: 80px;
   align-items: center;
+
+  @media screen and (min-width: 480px) {
+    height: 60px;
+  }
 }

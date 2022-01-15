@@ -291,10 +291,27 @@ a {
 }
 
 .conteiner {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+  }
 }
 
 .header {
@@ -305,10 +322,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .section-header {
+    height: 60px;
+  }
 }
 
 .logo {
@@ -351,6 +373,12 @@ a {
 
 .site-nav__link:hover, .site-nav__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .site-nav__link {
+    display: none;
+  }
 }
 
 .site-nav__items {
@@ -433,6 +461,12 @@ a {
   color: #2196f3;
 }
 
+@media screen and (min-width: 480px) {
+  .auth-nav__link {
+    display: none;
+  }
+}
+
 .auth-nav__icon-mail {
   width: 16px;
   height: 12px;
@@ -463,36 +497,39 @@ a {
 
 .hero {
   text-align: center;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #212121;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
 }
 
-.hero__backgound {
-  padding-left: 237px;
-  padding-right: 237px;
-  margin-bottom: 30px;
+@media screen and (min-width: 480px) {
+  .hero {
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images-phone/Hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images-phone/Hero.jpg);
+  }
 }
 
-.hero__title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 40px;
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images-phone/Hero@2x.jpg");
+  }
 }
 
 .order-service-button {
@@ -511,6 +548,12 @@ a {
 
 .order-service-button:focus, .order-service-button:hover {
   background-color: #188ce8;
+}
+
+@media screen and (min-width: 480px) {
+  .order-service-button {
+    margin-top: 30px;
+  }
 }
 
 .backdrop {
@@ -534,14 +577,17 @@ a {
 
 .modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: #fff;
   z-index: 2;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    top: 93px;
+    left: 15px;
+  }
 }
 
 .modal__title {
@@ -817,34 +863,28 @@ a {
   margin: -1px;
 }
 
-.section-advantages {
-  padding-top: 94px;
-}
-
-.advantages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.advantages__items {
-  width: 270px;
-}
-
-.advantages__items:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .section-advantages {
+    padding-top: 60px;
+  }
 }
 
 .advantages__title {
+  text-align: center;
   margin-bottom: 10px;
 }
 
 .advantages__bag {
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
-  margin-bottom: 30px;
-  padding: 25px 100px;
+}
+
+@media screen and (min-width: 480px) {
+  .advantages__bag {
+    width: 450px;
+    height: 120px;
+    padding: 25px 192px;
+    margin-bottom: 60px;
+  }
 }
 
 .advantages__text {
@@ -872,6 +912,12 @@ a {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .section-work {
+    display: none;
+  }
 }
 
 .work {
@@ -932,12 +978,6 @@ a {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
-}
-
-.team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .team__name {

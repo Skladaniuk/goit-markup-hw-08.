@@ -18,6 +18,11 @@ a {
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  
 }
 
 .site-nav__items {

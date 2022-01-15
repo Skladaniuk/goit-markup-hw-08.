@@ -1,38 +1,71 @@
 .hero {
   text-align: center;
-  height: 600px;
+  // height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: $primary-text-color;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero.jpg");
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+  // background-image: linear-gradient(
+  //     to right,
+  //     rgba(47, 48, 58, 0.4),
+  //     rgba(47, 48, 58, 0.4)
+  //   ),
+  //   url("../images/hero.jpg");
 
-  &__backgound {
-    padding-left: 237px;
-    padding-right: 237px;
-    margin-bottom: 30px;
+  // &__backgound {
+  //   padding-left: 237px;
+  //   padding-right: 237px;
+  //   margin-bottom: 30px;
+  // }
+
+  @media screen and(min-width:480px) {
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images-phone/Hero.jpg);
   }
 
   &__title {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $white-color;
-    margin-bottom: 40px;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
+    // font-family: Roboto;
+    // font-style: normal;
+    // font-weight: 900;
+    // font-size: 44px;
+    // line-height: 1.4;
+    // text-align: center;
+    // letter-spacing: 0.06em;
+    // text-transform: uppercase;
+    // color: $white-color;
+    // margin-bottom: 40px;
+    // max-width: 650px;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    @media screen and(min-width:480px) {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.6;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: $white-color;
+    }
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images-phone/Hero@2x.jpg");
   }
 }
 
@@ -51,5 +84,9 @@
   &:focus,
   &:hover {
     background-color: #188ce8;
+  }
+
+  @media screen and (min-width: 480px) {
+    margin-top: 30px;
   }
 }
