@@ -4,6 +4,14 @@
   display: block;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 65px;
+    right: 89px;
+    padding: 0;
+  }
 }
 
 .footer__title {
@@ -37,6 +45,10 @@
   }
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 0px 0px 0px;
+  }
 }
 
 .social-networks-list__item:not(:last-child) {

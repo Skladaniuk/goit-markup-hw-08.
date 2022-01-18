@@ -43,10 +43,16 @@
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6;
-    text-align: center;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
     color: $white-color;
+
+    @media screen and (min-width: 768px) {
+      min-width: 360px;
+      margin-left: 204px;
+      margin-right: 204px;
+    }
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
