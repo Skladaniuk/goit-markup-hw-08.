@@ -27,6 +27,7 @@
   @media screen and (min-width: 1200px) {
     margin-top: 20px;
     padding-bottom: 60px;
+    text-align: left;
   }
 }
 .footer__logo {
@@ -55,8 +56,9 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
     padding-top: 60px;
+    padding-bottom: 0;
+    text-align: left;
   }
 }
 

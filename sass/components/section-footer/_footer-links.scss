@@ -31,34 +31,12 @@
 
   @media screen and (min-width: 1200px) {
     padding-left: 70px;
+    text-align: left;
   }
 }
 
 .social-networks-list__item:not(:last-child) {
   margin-right: 10px;
-}
-
-.social-networks-list {
-  display: flex;
-  padding: 16px 32px 30px 32px;
-  align-items: center;
-  justify-content: center;
-
-  &--footer {
-    padding-top: 20px;
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      padding: 20px 0px 0px 0px;
-    }
-  }
-  align-items: center;
-  justify-content: center;
-
-  @media screen and (min-width: 1200px) {
-    padding: 0px;
-    padding-top: 20px;
-    padding-left: 70px;
-  }
 }
 
 .social-networks-list__item:not(:last-child) {
