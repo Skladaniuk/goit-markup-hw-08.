@@ -1,13 +1,18 @@
 .auth-nav {
   display: none;
-  // &__item:not(:last-child) {
-  //   margin-right: 50px;
-  // }
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-left: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0px;
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -18,12 +23,10 @@
 .auth-nav__link {
   text-decoration: none;
   display: none;
-  // display: block;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  // font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   display: flex;
@@ -35,11 +38,14 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 14px;
+  }
 }
 
 .auth-nav__icon-mail {
-  //  width: 16px;
-  //  height: 12px;
   width: 14px;
   height: 10px;
   margin-right: 8px;
@@ -49,11 +55,15 @@
   .auth-nav__link:focus & {
     fill: $accent-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 
 .auth-nav__icon-phone {
-  // width: 10px;
-  // height: 16px;
   width: 10px;
   height: 14px;
   margin-right: 8px;
@@ -64,8 +74,17 @@
   .auth-nav__link:focus & {
     fill: $accent-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
 }
 
 .auth-nav__item:first-child {
   margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }

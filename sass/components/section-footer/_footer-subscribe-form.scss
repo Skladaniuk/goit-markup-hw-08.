@@ -1,12 +1,14 @@
 .footer-form {
-  // margin-left: 93px;
-  // padding-top: 72px;
-  // padding-bottom: 94px;
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 247px;
     padding-right: 137px;
     padding-left: 151px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    padding-top: 72px;
+    padding-bottom: 94px;
   }
 
   &__title {
@@ -22,11 +24,13 @@
   }
 
   &__bag {
-    // display: flex;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+
     & input {
       outline: none;
-      // height: 50px;
-      // width: 358px;
+
       width: 100%;
       border: 1px solid rgba(255, 255, 255, 0.3);
       box-sizing: border-box;
@@ -46,6 +50,11 @@
       letter-spacing: 0.03em;
 
       color: rgba(255, 255, 255, 0.6);
+
+      @media screen and (min-width: 1200px) {
+        height: 50px;
+        width: 358px;
+      }
     }
   }
 }
