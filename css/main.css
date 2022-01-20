@@ -1877,8 +1877,10 @@ a {
   }
 }
 
-.cards-portfolio__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .cards-portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .cards-portfolio__item:hover, .cards-portfolio__item:focus {
