@@ -706,6 +706,8 @@ a {
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images-phone/Hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images-phone/Hero.jpg");
 }
 
 @media screen and (min-width: 1200px) {
@@ -713,8 +715,8 @@ a {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images-desktop/hero-desk.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images-desktop/hero-desk.jpg");
   }
   .hero__backgound {
     padding-left: 237px;
@@ -733,6 +735,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  z-index: 3;
 }
 
 @media screen and (min-width: 768px) {
@@ -804,6 +807,7 @@ a {
 }
 
 .order-service-button {
+  border: none;
   background-color: #2196f3;
   color: #ffffff;
   font-family: Roboto;
@@ -846,7 +850,7 @@ a {
   position: absolute;
   background-color: #fff;
   z-index: 2;
-  width: 450px;
+  width: calc(100vw - 15px * 2);
   height: 609px;
   top: 93px;
   left: 15px;
@@ -1183,26 +1187,30 @@ a {
 }
 
 .advantages__bag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #f5f4fa;
-  width: 450px;
+  width: 100%;
   height: 120px;
-  padding: 25px 192px;
   margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   .advantages__bag {
-    width: calc((100vw - 4 * 15px) / 2);
-    padding: 25px 144px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantages__bag {
-    width: 270px;
-    height: 120px;
     margin-bottom: 30px;
-    padding: 25px 100px;
   }
 }
 
@@ -1476,6 +1484,10 @@ a {
 .social-networks-list__link:hover .social-networks-list__icon,
 .social-networks-list__link:focus .social-networks-list__icon {
   fill: #fff;
+}
+
+.team__image {
+  width: 100%;
 }
 
 .clients {
@@ -1828,6 +1840,7 @@ a {
   height: 50px;
   background-color: #2196f3;
   color: #ffffff;
+  border: none;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
