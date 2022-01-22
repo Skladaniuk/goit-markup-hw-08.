@@ -859,6 +859,8 @@ a {
 
 @media screen and (min-width: 768px) {
   .modal {
+    width: 450px;
+    height: 609px;
     top: 208px;
     left: 159px;
   }
