@@ -1541,6 +1541,8 @@ a {
   .clients__list {
     margin-top: 0px;
     margin-left: 0px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -1551,8 +1553,6 @@ a {
 
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: 170px;
-    height: 92px;
     margin-left: 0px;
     margin-top: 0px;
   }
@@ -1590,7 +1590,8 @@ a {
 
 @media screen and (min-width: 1200px) {
   .clients__link {
-    width: calc((100vw - 12 * 15px) / 6);
+    width: 170px;
+    height: 92px;
   }
 }
 
