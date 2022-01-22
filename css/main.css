@@ -2059,7 +2059,7 @@ a {
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding: 63px 24px;
+  padding: 77px 24px;
   -webkit-transition: 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
@@ -2074,5 +2074,17 @@ a {
   transition: 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .cards-portfolio__text {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards-portfolio__text {
+    padding: 63px 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

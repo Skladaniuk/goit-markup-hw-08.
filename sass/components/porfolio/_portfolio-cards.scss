@@ -93,11 +93,17 @@
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding: 63px 24px;
+  padding: 77px 24px;
   transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
   .cards-portfolio__item:hover &,
   .cards-portfolio__item:focus & {
     transform: translateY(0%);
     transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
   }
 }
